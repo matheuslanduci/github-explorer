@@ -1,0 +1,42 @@
+.issue-item {
+  padding-left: 24px;
+  padding-right: 20px;
+
+  width: 100%;
+  height: 7rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+
+  list-style: none;
+
+  transition: border-color 0.2s;
+}
+
+.issue-item:hover {
+  border-color: var(--green);
+}
+
+.issue-item .issue-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.issue-item .issue-data strong {
+  color: var(--title);
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+
+.issue-item .issue-data span {
+  margin-top: 0.5rem;
+  
+  color: var(--light-text);
+  font-size: 1.175rem;
+  line-height: 1.375rem;
+}

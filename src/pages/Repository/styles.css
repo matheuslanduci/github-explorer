@@ -1,0 +1,90 @@
+.repository-page {
+  padding-top: 6.25rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.repository-page .profile-data {
+  display: flex;
+  align-items: center;
+}
+
+.repository-page .profile-data img {
+  width: 7.5rem;
+  height: 7.5rem;
+
+  border-radius: 50%;
+}
+
+.repository-page .profile-data .data-column {
+  margin-left: 1rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.repository-page .profile-data .data-column strong {
+  color: var(--title);
+  font-size: 2.25rem;
+  line-height: 2.625rem;
+}
+
+.repository-page .profile-data .data-column span {
+  margin-top: 0.75rem;
+
+  color: var(--dark-text);
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+.repository-page .repo-data {
+  margin-top: 2.5rem;
+}
+
+.repository-page .repo-data ul {
+  display: flex;
+}
+
+.repository-page .repo-data ul li {
+  margin-right: 5rem;
+
+  display: flex;
+  flex-direction: column;
+
+  list-style: none;
+}
+
+.repository-page .repo-data ul li strong {
+  color: var(--title);
+  font-size: 2.25rem;
+  line-height: 2.625rem;
+}
+
+.repository-page .repo-data ul li span {
+  margin-top: 0.25rem;
+
+  color: var(--base-text);
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+.repository-page .issues-list {
+  margin-top: 5rem;
+}
+
+.repository-page .issues-list .issue-item {
+  margin-bottom: 1rem;
+}
+
+.repository-page .loading {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.repository-page .loading .loading-icon {
+  animation: loadingAnimate 0.8s infinite;
+}

@@ -1,0 +1,28 @@
+.header {
+  padding-top: 2.5rem;
+
+  width: 100%;  
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .back-link {
+  display: flex;
+  align-items: center;
+
+  color: var(--light-text);
+  font-weight: 700;
+  text-decoration: none;
+
+  transition: filter 0.2s;
+}
+
+.header .back-link:hover {
+  filter: contrast(25%);
+}
+
+.header .back-link svg {
+  margin-right: 12px;
+}

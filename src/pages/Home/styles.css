@@ -1,0 +1,109 @@
+.home-page {
+  padding-top: 6.25rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.home-page strong {
+  color: var(--main-title);
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+.home-page .input {
+  margin-top: 2.5rem;
+  display: flex;
+}
+
+.home-page .input input {
+  padding: 0 1.75rem;
+
+  width: 31.5rem;
+  height: 4.5rem;
+
+  background: #fff;
+  border: 0;
+  border-radius: 5px 0 0 5px;
+  color: var(--light-text);
+  font-family: inherit;
+  font-size: 1.25rem;
+}
+
+.home-page .input input:focus {
+  outline: none;
+}
+
+.home-page .input input::placeholder {
+  color: var(--light-text);
+  font-family: inherit;
+}
+
+.home-page .input button {
+  width: 13.125rem;
+  height: 4.5rem;
+
+  background: var(--green);
+  border: 0;
+  border-radius: 0 5px 5px 0;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.125rem;
+  font-weight: 700;
+
+  transition: filter 0.2s;
+}
+
+.home-page .input button:hover {
+  filter: contrast(90%);
+}
+
+.home-page .input button:active,
+.home-page .input button:focus {
+  filter: contrast(80%);
+  outline: none;
+}
+
+.home-page .repository-list {
+  margin: 7.5rem 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.home-page .repository-list ul > span {
+  color: var(--title);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.home-page .repository-list ul > span i:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.home-page .repository-list .repository-item {
+  margin: 1rem 0;
+}
+
+@keyframes loadingAnimate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.home-page .loading {
+  width: 44.625rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-page .loading .loading-icon {
+  animation: loadingAnimate 0.8s infinite;
+}

@@ -1,0 +1,50 @@
+:root {
+  --background: #f2f2fa;
+
+  --main-title: #3a3a3a;
+  --title: #3d3d4d;
+  --light-text: #a8a8b3;
+  --base-text: #6c6c80;
+  --dark-text: #737380;
+
+  --green: #04d361;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  background: var(--background);
+  font-family: "Roboto", sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+#content {
+  margin: 0 auto;
+
+  width: 100%;
+  max-width: 960px;
+  min-height: 100vh;
+
+  background-image: url("../assets/background.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
